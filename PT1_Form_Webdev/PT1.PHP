@@ -394,24 +394,24 @@
                     <table border="0px">
                         <tr>
                         <td>First Name </td> 
-                        <td><input type = "text" name = "fName"></td>
+                        <td><input type = "text" name = "fName" required></td>
                         </tr>
                         <tr>
                         <td>Last Name </td> 
-                        <td><input type = "text" name = "lName"></td>
+                        <td><input type = "text" name = "lName" required></td>
                         </tr>
                         <tr>
                        <td>Gender: </td>
-                        <td> <input type="radio" name="gender" value="Female"> Female
+                        <td> <input type="radio" name="gender" value="Female" > Female
                          <input type="radio" name="gender" value="Male"> Male
                          <input type="radio" name="gender" value="other"> Other </td></tr>
                         <tr>
                             <td> Date of Birth</td>
-                            <td><input type="date" name="date" min=""  max="1-1-2020"></td>
+                            <td><input type="date" name="date" min=""  max="1-1-2020" required></td>
                         </tr>
                         <tr>
                        <td>Address</td> 
-                       <td><input type = "text" name = "Address"></td>
+                       <td><input type = "text" name = "Address" required></td>
                     </tr>
                        <tr>
                            <td>Country</td>
@@ -654,12 +654,12 @@
                             <option value="Zimbabwe">Zimbabwe</option></select></td>
                         </tr>
                         <tr><td>   Username: </td>
-                          <td> <input type = "text" name = "username"></td>
+                          <td> <input type = "text" name = "username" required></td>
                         <tr>
                         <td>Password </td>
-                          <td>  <input type = "password" name = "password" minlength = "8" ></td> </tr>
+                          <td>  <input type = "password" name = "password" minlength = "8" required ></td> </tr>
                           <td>Confirm Password </td>
-                          <td>  <input type = "password" name = "Cpassword" minlength = "8" ></td> </tr>
+                          <td>  <input type = "password" name = "Cpassword" minlength = "8" required></td> </tr>
                        <td></td>
                       <td> <input type = "submit" id ="submit"> </td>
                 </table>
