@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+     <head>
+        <title>PRELIMS/PT1 HCI</title>
+        <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+        <style>
+
+.center {
+  background-color: rgb(231, 208, 208);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  border: 5px solid green; 
+}
+   </style>
+ </head>
+<form>
+    <body> 
+       <div id="container">
+                <div class="center">
+                        <h2> PT1/PRELIMS HCI_Caacbay </h2>
+                        <p>The Structuring Patterns of UI Software Architecture <br>
+                        <h3>What are you doing now?</h3>
+                        <label>Name :</label>
+                        <input type="text" id="name" placeholder="Input Name"><br><br>
+
+                        <label>Date : </label>
+                        <input type="date" id="date"><br><br>
+
+                        <label>Message :</label>
+                        <textarea id="txtArea" placeholder="Input Message"></textarea><br><br>
+                        <button id="btn">send</button>
+                </div>
+              </div>
+       </form>
+ </body>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                var Name = $("#name").val();
+                var Date = $("#date").val();
+                var Txt = $("#txtArea").val();
+
+                $("#container").html("<b>Name :</b> " +  Name + "<br><b>Date :</b> " +  Date + 
+                "<br><b>Sent Message: </b> ").addClass("center")+$("#container").append(Txt).css({"text-align": "center"});
+            });
+        });
+    </script>
+</html>
