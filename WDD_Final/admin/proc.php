@@ -2,11 +2,11 @@
 require_once("connect.php");
 
 if (isset($_POST['submit'])){
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
+    $user = $_POST['user'];
+    $pass = $_POST['pass'];
 
 
-    $login_query = "SELECT username, password from admin_tbl where username = '$user' AND password = '$pass' ";
+    $login_query = "SELECT userName, passWord from admin_tbl where userName = '$user' AND passWord = '$pass' ";
    
 
     $result = mysqli_query($dbc, $login_query);
@@ -18,8 +18,8 @@ if (isset($_POST['submit'])){
         
     }
     else {
-        echo '<script> alert("Oh no bro! wrong password")</script>';
-        include("adminL.html");
+        echo '<script> alert("Wrong Password! Try it again!")</script>';
+        include("main.html");
     }
 
 }
